@@ -10,7 +10,7 @@ describe("Assertions demo", () =>{
         //cy.url().should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         //cy.url().should('contain','orangehrm')
         
-    /*   cy.url().should('include','orangehrmlive.com')  
+    /*   cy.url().should('include','orangehrmlive.com')
         .should('eq','https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         .should('contain','orangehrm')  */
 
@@ -40,7 +40,7 @@ describe("Assertions demo", () =>{
 
     })
 
-    /*it("Explicit assertions", () =>{
+    it("Explicit assertions", function (){
 
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
@@ -49,7 +49,23 @@ describe("Assertions demo", () =>{
         cy.get("input[placeholder='Password']").type("admin123")
         cy.get("button[type='submit']").click();
 
-    })*/
+        let expName = "Paulzsxzsd1. Collingszxca.";
+
+        cy.get("p.oxd-userdropdown-name").then( (x) =>{
+
+            let actName = x.text()
+
+            //BDD Style
+            expect(actName).to.equal(expName)
+            expect(actName).to.not.equal(expName)
+
+            //TDD Style
+            assert.equal(actName,expName)
+            assert.not.equal(actName,expName)
+
+        })
+
+    })
 
 
 
