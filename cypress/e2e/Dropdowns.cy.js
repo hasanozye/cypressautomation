@@ -3,7 +3,7 @@
 
 describe('Handle dropdowns', function(){
 
-    it.skip('Dropdown with select', function(){
+    it('Dropdown with select', function(){
 
         cy.visit("https://testautomationpractice.blogspot.com/")
         
@@ -13,7 +13,7 @@ describe('Handle dropdowns', function(){
 
     })
 
-    it.skip('Dropdown without select', ()=>{
+    it('Dropdown without select', ()=>{
 
         cy.visit("https://www.dummyticket.com/dummy-ticket-for-visa-application/")
 
