@@ -25,3 +25,13 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 /// <reference types="Cypress" />       // for Cypess
+
+
+Cypress.Commands.add('getIframe', (iframe)=>{
+
+return cy.get(iframe)
+.its('0.contentDocument.body')
+.should('be.visible')
+.then(cy.wrap)
+
+})
