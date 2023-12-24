@@ -13,7 +13,7 @@ describe('Handle Tables', ()=>{
         cy.get(".btn-close").click()
         //Customers --> Customers
 
-        cy.get("#menu-customer>a").click()  //customers main menu
+        cy.get("#menu-customer>a").click()  //customers main menu lol
         cy.get("#collapse-5>li:first-child").click()    //customers - sub item
 
 
