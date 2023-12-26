@@ -57,10 +57,9 @@ describe("Mouse Operations", ()=>{
 
     it.only('Drag and Drop using plugin', ()=>{
 
-        cy.visit("https://testautomationpractice.blogspot.com/");
+        cy.visit("https://kitchen.applitools.com/ingredients/drag-and-drop");
 
-        cy.get("div#draggable").drag("div#droppable")
-        cy.get("div#droppable>p").should('have.value','Dropped!')
+        cy.get('#menu-ice-cream').drag('#plate-items');
 
     });
 
