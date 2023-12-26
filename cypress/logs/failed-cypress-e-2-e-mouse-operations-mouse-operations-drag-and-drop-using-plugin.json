@@ -1,0 +1,22 @@
+{
+  "specName": "cypress\\e2e\\MouseOperations.cy.js",
+  "title": "Drag and Drop using plugin",
+  "suiteName": "Mouse Operations",
+  "testName": "Mouse Operations Drag and Drop using plugin",
+  "testError": "The following error originated from your application code, not from Cypress.\n\n  > Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.",
+  "testCommands": [
+    "visit https://demoqa.com/droppable/",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "request ",
+    "uncaught exception Error: Script error.\n\nCypress detected that an uncaught error was thrown from a cross origin script.\n\nWe cannot provide you the stack trace, line number, or file where this error occurred.\n\nCheck your Developer Tools Console for the actual error - it should be printed there.\n\nIt's possible to enable debugging these scripts by adding the `crossorigin` attribute and setting a CORS header."
+  ]
+}
