@@ -55,18 +55,27 @@ describe("Mouse Operations", ()=>{
     });
 
 
-    it.only('Drag and Drop using plugin', ()=>{
+    it('Drag and Drop using plugin', ()=>{
 
         cy.visit("https://kitchen.applitools.com/ingredients/drag-and-drop");
 
         cy.get('#menu-ice-cream').drag('#plate-items');
+        //cy.get('#menu-ice-cream').drag('#plate-items', {force:true}) use this for force true actions.
 
     });
 
 
-    it.skip('Scrolling Page', ()=>{
+    it.only('Scrolling Page', ()=>{
 
+        //Palau Flag
+        cy.visit("https://www.countries-ofthe-world.com/flags-of-the-world.html");
+        cy.get("img[alt='Flag of Palau']").scrollIntoView({duration:2000});
+        cy.get("img[alt='Flag of Palau']").should('be.visible')
 
+        cy.get("img[alt='Flag of Andorra']").scrollIntoView({duration:2000});
+        cy.get("img[alt='Flag of Andorra']").should('be.visible');
+
+        cy.get("div#footer").scrollIntoView({duration:2000});
 
 
 
