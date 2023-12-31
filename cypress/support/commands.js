@@ -35,3 +35,24 @@ return cy.get(iframe)
 .then(cy.wrap)
 
 })
+
+
+
+// custom command for clicking on link using label
+
+Cypress.Commands.add('clickLink',(label)=>{
+
+    cy.get('a').contains(label).click();
+
+});
+
+
+Cypress.Commands.add("login", (username,password)=>{
+
+    cy.get("#Email").type(username);
+    cy.get("#Password").type(password);
+    cy.get('.login-button').click();
+
+
+
+})
