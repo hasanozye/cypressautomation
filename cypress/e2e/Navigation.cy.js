@@ -8,7 +8,7 @@ describe('mySuite', ()=>{
 
         cy.visit("https://demo.opencart.com/");
         cy.title().should('eq','Your Store');   //Home page
-        cy.clickLink('Cameras', {force:true});
+        cy.clickLink('Cameras');
 
         cy.get("h2").should('contain.text','Cameras'); //cameras
 
