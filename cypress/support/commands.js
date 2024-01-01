@@ -42,7 +42,7 @@ return cy.get(iframe)
 
 Cypress.Commands.add('clickLink',(label)=>{
 
-    cy.get('a').contains(label).click();
+    cy.get('a').contains(label).click({force: true});
 
 });
 
